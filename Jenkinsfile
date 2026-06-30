@@ -8,7 +8,7 @@ pipeline{
         stage('build maven'){
          steps{
              sh 'chmod +x mvnw'
-            sh 'mvn clean package'
+            sh './mvnw clean package'
          }   
         }
         stage('build docker image'){
