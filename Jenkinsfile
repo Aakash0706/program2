@@ -7,6 +7,7 @@ pipeline{
     stages{
         stage('build maven'){
          steps{
+             sh 'chmod +x mvnw'
             sh './mvnw clean package'
          }   
         }
